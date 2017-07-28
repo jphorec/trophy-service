@@ -10,6 +10,8 @@ import org.springframework.data.mongodb.core.mapping.Document
 data class User (
         @Id
         var id: String? = null,
+        var firstName: String,
+        var lastName: String,
         var username: String,
         var userType: String,
         var friends: List<String>? = null,
