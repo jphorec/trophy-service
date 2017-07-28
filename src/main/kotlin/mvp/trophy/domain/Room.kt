@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document
  */
 @Document(collection = "Room")
 data class Room (
-        var id: String,
+        var id: String? = null,
         var name: String,
         var description: String,
         var owners: String,

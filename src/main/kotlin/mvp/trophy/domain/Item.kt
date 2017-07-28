@@ -10,7 +10,7 @@ import java.time.LocalDate
 @Document(collection = "Item")
 data class Item (
         @Id
-        var id: String,
+        var id: String? = null,
         var name: String,
         var description: String,
         var creator: String,

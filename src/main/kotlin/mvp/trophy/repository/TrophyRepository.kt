@@ -8,16 +8,16 @@ import org.springframework.stereotype.Repository
  * Created by joshhorecny on 7/27/17.
  */
 @Repository
-interface ContentProviderRepository : MongoRepository<ContentProvider, String> {}
+interface ContentProviderRepository : MongoRepository<ContentProvider, String>
 
 @Repository
-interface OrganizationRepository : MongoRepository<Organization, String> {}
+interface OrganizationRepository : MongoRepository<Organization, String>
 
 @Repository
-interface ItemRepository : MongoRepository<Item, String> {}
+interface ItemRepository : MongoRepository<Item, String>
 
 @Repository
-interface UserRepository : MongoRepository<User, String> {}
+interface UserRepository : MongoRepository<User, String>
 
 @Repository
-interface RoomRepository : MongoRepository<Room, String> {}
+interface RoomRepository : MongoRepository<Room, String>

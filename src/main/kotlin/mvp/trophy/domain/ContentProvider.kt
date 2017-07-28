@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document
 @Document(collection = "ContentProvider")
 data class ContentProvider (
     @Id
-    var id: String,
+    var id: String? = null,
     var name: String,
     var admins: List<String>,
     var homepageURI: String

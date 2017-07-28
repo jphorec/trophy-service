@@ -17,19 +17,19 @@ interface UserService {
 interface RoomService {
     fun getAllRooms(): List<Room>
     fun getRoom(id: String): Room
-    fun createRoom(id: String): Room
+    fun createRoom(room: Room): Room
 }
 
 interface ContentProviderService {
     fun getAllProviders(): List<ContentProvider>
     fun getContentProvider(id: String): ContentProvider
-    fun createContentProvider(id: String): ContentProvider
+    fun createContentProvider(contentProvider: ContentProvider): ContentProvider
 }
 
 interface OrganizationService {
     fun getAllOrganizations(): List<Organization>
-    fun getOrganzion(id: String): Room
-    fun createRoom(id: String): Room
+    fun getOrganization(id: String): Organization
+    fun createOrganization(organization: Organization): Organization
 }
 
 interface ItemService {

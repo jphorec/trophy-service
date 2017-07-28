@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document
 @Document(collection = "Organization")
 data class Organization (
         @Id
-        var id: String,
+        var id: String? = null,
         var name: String,
         var homepageURI: String,
         var rooms: List<String>,
