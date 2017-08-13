@@ -8,16 +8,26 @@ import org.springframework.stereotype.Repository
  * Created by joshhorecny on 7/27/17.
  */
 @Repository
-interface ContentProviderRepository : MongoRepository<ContentProvider, String>
+interface ContentProviderRepository : MongoRepository<ContentProvider, String> {
+    fun findByIdsIn(ids: List<String>) : List<ContentProvider>
+}
 
 @Repository
-interface OrganizationRepository : MongoRepository<Organization, String>
+interface OrganizationRepository : MongoRepository<Organization, String> {
+     fun findByIdsIn(ids: List<String>) : List<Organization>
+}
 
 @Repository
-interface ItemRepository : MongoRepository<Item, String>
+interface ItemRepository : MongoRepository<Item, String> {
+    fun findByIdsIn(ids: List<String>) : List<Item>
+}
 
 @Repository
-interface UserRepository : MongoRepository<User, String>
+interface UserRepository : MongoRepository<User, String> {
+    fun findByIdsIn(ids: List<String>) : List<User>
+}
 
 @Repository
 interface RoomRepository : MongoRepository<Room, String>
+    fun findByIdsIn(ids: List<String>) : List<Room>
+}
